@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+/* Global Reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f5f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* App Container */
+.app-container {
+  padding: 24px;
+  background-color: #ffffff;
   min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 32px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.heading {
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.desc {
+  font-size: 16px;
+  color: #334155;
+}
+
+.highlight {
+  color: #0b69ff;
+  font-weight: 600;
+}
+
+/* Bottom Layout */
+.bottom-section {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Form & History Section */
+.form-container,
+.history-container {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 24px;
+  flex: 1;
+  min-width: 320px;
+}
+
+.form-heading {
+  font-size: 20px;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #7e858e;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7dfe9;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.add-btn {
+  background-color: #0b69ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Summary Cards */
+.summary-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+  padding: 16px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.App-link {
-  color: #61dafb;
+.card img.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-label {
+  color: #7e858e;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.card-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.card.income {
+  background-color: #ecfccb;
+  border-left: 6px solid #84cc16;
+}
+
+.card.expenses {
+  background-color: #ede9fe;
+  border-left: 6px solid #7c3aed;
+}
+
+/* History Table */
+.history-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.history-col {
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+  color: #334155;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 16px;
+  height: 16px;
 }

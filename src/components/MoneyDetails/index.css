@@ -1,0 +1,48 @@
+.summary-container {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 200px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card img.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.card-label {
+  color: #7e858e;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.card-amount {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.card.income {
+  background-color: #ecfccb;
+  border-left: 6px solid #84cc16;
+}
+
+.card.expenses {
+  background-color: #ede9fe;
+  border-left: 6px solid #7c3aed;
+}
